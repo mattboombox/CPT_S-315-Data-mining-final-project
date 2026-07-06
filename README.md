@@ -31,8 +31,8 @@ suited to rare-event detection rather than raw accuracy.
 | File | Description |
 |---|---|
 | `Final_Project_Abstract.pdf` | Project abstract covering motivation, dataset, methodology, challenges, and expected outcomes |
-| `logistic_regression_linear.py` | Loads the dataset, scales `Amount`, splits the data, and trains a class-weighted logistic regression model to classify transactions as fraudulent or legitimate |
-| `logistic_regression_from_scapy.py` | Utility script for scanning `.pcap` network capture files for plaintext flags/strings in raw TCP payloads (packet-analysis exercise; unrelated to the fraud detection model above) |
+| `linear.py` | Loads the dataset, scales `Amount`, splits the data, and trains a class-weighted logistic regression model to classify transactions as fraudulent or legitimate |
+| `from_scapy.py` | Utility script for scanning `.pcap` network capture files for plaintext flags/strings in raw TCP payloads (packet-analysis exercise; unrelated to the fraud detection model above) |
 
 ## Results
 
@@ -52,7 +52,7 @@ scapy   # only needed for the packet-analysis script
 
 ```bash
 pip install -r requirements.txt
-python logistic_regression_linear.py
+python linear.py
 ```
 
 ## Future Work
